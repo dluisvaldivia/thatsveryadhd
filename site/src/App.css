@@ -46,3 +46,7 @@ body {
 .contacts-container {
   width: 25rem
 }
+
+.calendly-badge-widget {
+  margin-top:px;  /* Adjust the value as needed */
+}
