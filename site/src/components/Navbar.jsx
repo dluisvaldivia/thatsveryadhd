@@ -1,4 +1,11 @@
 import React from 'react';
+import { IoPricetagsOutline } from "react-icons/io5";
+import { CgProfile } from "react-icons/cg";
+import { IoChatbubblesOutline } from "react-icons/io5";
+import { IoMdContacts } from "react-icons/io";
+
+
+import { Link } from 'react-router-dom'
 
 export default function navbar() {
 
@@ -11,16 +18,25 @@ export default function navbar() {
                         <span className="navbar-toggler-icon"></span>
                     </button>
                     <div className="collapse navbar-collapse" id="navbarNavDropdown">
-                        <ul className="ms-3 navbar-nav">
+                        <ul className="ms-3 navbar-nav icon-spacing">
                             <li className="nav-item">
-                                <a className="nav-link active" aria-current="page" href="#">Home</a>
+                            <CgProfile />
+                                <Link to="/" className="nav-link active" aria-current="page" href="#">Home</Link>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link" href="#">My Story</a>
+                            <IoChatbubblesOutline />
+                                <Link to="/my-story" className="nav-link" href="#">My Story</Link>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link" href="#">Pricing</a>
+                            <IoPricetagsOutline />
+                                <Link to="/pricing" className="nav-link" href="#">Pricing</Link>
                             </li>
+                            <li className="nav-item">
+                            <IoMdContacts />
+                                <Link to="/contact" className="nav-link" href="#">Contact</Link>
+                            </li>
+                            
+
                         </ul>
                         
                     </div>
