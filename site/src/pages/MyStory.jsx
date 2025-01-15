@@ -5,11 +5,11 @@ export default function MyStory() {
 
     return (
         <div className="container">
-            <div className="row">
-                <div className='col-4 pt-3'>
+            <div className="row justify-content-center justify-content-md-start">
+                <div className='col-5 col-md-4 py-3'>
                     <img src='../public/assests/IMG_3855.jpg' className="img-fluid rounded float-start" alt="sarahK.B"></img>
                 </div>
-                <div className='col-8'>
+                <div className='col-12 col-md-8'>
                     <h1>My story</h1>
                     <p>
                         I am Sarah K.B. (Kessous Buendia), a certified ADHD specialist coach from GoldMind Academy. Driven by a fascination with how the brain works, I became a specialized ADHD coach to better understand my own ADHD brain and to navigate the unique experiences of being a mother to two wonderful neurodivergent children — a son with Down syndrome and a daughter with ADHD. This personal journey has deepened my empathy and strengthened my commitment to advocating for neurodivergent communities and helping them thrive by finding their gold.

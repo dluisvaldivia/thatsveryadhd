@@ -1,15 +1,25 @@
-#root {
-  text-align: center;
-  flex-direction: column;
+/* Ensure full height for the page */
+html, body {
+  height: 100%; /* Full height for the entire page */
+  margin: 0; /* Reset default margin */
+  display: flex; /* Using flexbox for layout */
+  flex-direction: column; /* Stack content in a column */
 }
 
-#footer {
-  position: relative;
-  bottom: 0;
-  width: 100%;
-  margin-top: auto; 
-  height: 2.5rem;     
-  position: relative;  
+#root {
+  text-align: center;
+  flex-direction: column; /* Make sure all elements in root are vertically aligned */
+  display: flex; /* Flexbox layout for the whole root */
+  min-height: 100%; /* Ensure the root takes up full height */
+}
+
+.app-container {
+  flex-grow: 1; /* Allow the content to take up all available space */
+}
+
+/* Footer will stay at the bottom */
+footer {
+  margin-top: auto; /* This ensures the footer stays at the bottom */
 }
 
 .compact-text p {
@@ -18,8 +28,4 @@
 
 .icon-spacing li {
   margin-right: 1rem;
-}
-
-.contacts-container {
-  width: 25rem
 }

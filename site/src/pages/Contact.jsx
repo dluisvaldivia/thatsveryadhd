@@ -3,8 +3,9 @@ import React from 'react';
 export default function Contact() {
 
     return (
-        <div className="container contacts-container">
-            <div className="row mt-3">
+        <div className="container contacts-container mb-5 pb-5 mt-5">
+            <div className="row my-3 d-flex justify-content-center">
+            <div className="col-11 col-md-6">
                 <form>
                     <h1>Let's chat</h1>
                     <div className="mb-3 mt-3">
@@ -21,6 +22,7 @@ export default function Contact() {
                     </div>
                     <button type="submit" className="btn btn-primary mt-3">Submit</button>
                 </form>
+                </div>
             </div>
         </div>
     )
