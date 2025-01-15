@@ -26,8 +26,8 @@ export default function Pricing() {
                     </p>
                 </div>
             </div>
-            <div className="row">
 
+            <div className="row">
                 <div className="col-12 col-md-6 ">
                     <div className="p-3 m-1 text-bg-dark rounded-3">
                         <h2>1 session</h2>
@@ -68,7 +68,7 @@ export default function Pricing() {
 
 
                 <div className="col-12 col-md-6">
-                    <div className="p-3 m-1 bg-body-tertiary rounded-3">
+                    <div className="p-4 m-1 bg-body-tertiary rounded-3">
                         <h2>20 session-pack</h2>
                         <p>valid until: {validUntilDate}</p>
                         <stripe-buy-button
