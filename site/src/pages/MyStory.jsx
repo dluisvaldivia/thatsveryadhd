@@ -6,8 +6,8 @@ export default function MyStory() {
     return (
         <div className="container">
             <div className="row justify-content-center justify-content-md-start">
-                <div className='col-5 col-md-4 py-3'>
-                    <img src='../assests/IMG_3855.jpg' className="img-fluid rounded float-start" alt="sarahK.B"></img>
+                <div className='col-5 col-md-4 py-3 mt-4'>
+                    <img src='../assests/sarahprofile.png' className="img-fluid rounded float-start" alt="sarahK.B"></img>
                 </div>
                 <div className='col-12 col-md-8'>
                     <h1>My story</h1>
