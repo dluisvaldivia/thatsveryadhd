@@ -11,16 +11,14 @@ import Contact from '../pages/Contact.jsx'
 function App() {
 
   return (
-    <Router>
+    <Router basename="https://dluisvaldivia.github.io/SarahKB">
       <Navbar />
-        <div className="app-container">
       <Routes>
         <Route path="/" element={<Landing />} />  
         <Route path="/my-story" element={<MyStory />} />
         <Route path="/pricing" element={<Pricing />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
-        </div>
       <Footer />
     </Router>
   )

@@ -18,12 +18,12 @@ export default function Pricing() {
                 <div className="col-12 col-md-6">
                     <h1>Pricing</h1>
                     <p>How does it work?
-                        <ul>
-                            <li>purchase a single session or a pack </li>
-                            <li>use it whenever! it expires 1 year from the purchase date</li>
-                            <li>schedule an appointment with me!</li>
-                        </ul>
                     </p>
+                    <ul>
+                        <li>purchase a single session or a pack </li>
+                        <li>use it whenever! it expires 1 year from the purchase date</li>
+                        <li>schedule an appointment with me!</li>
+                    </ul>
                 </div>
             </div>
 
