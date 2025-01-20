@@ -40,7 +40,7 @@ export default function Navbar() {
   return (
     <nav className="navbar navbar-expand-lg bg-body-tertiary" ref={navbarRef}>
       <div className="container-fluid">
-        <Link to="/" className="navbar-brand ms-5" onClick={handleLinkClick}>
+        <Link to="/SarahKB/" className="navbar-brand ms-5" onClick={handleLinkClick}>
           Sarah K.B.
         </Link>
         <button
@@ -60,28 +60,28 @@ export default function Navbar() {
         >
           <ul className="navbar-nav icon-spacing ms-3">
             <li className="nav-item">
-              <Link to="/my-story" className="nav-link" onClick={handleLinkClick}>
+              <Link to="/SarahKB/my-story" className="nav-link" onClick={handleLinkClick}>
                 <IoChatbubblesOutline />
                 <br />
                 My Story
               </Link>
             </li>
             <li className="nav-item">
-              <Link to="/contact" className="nav-link" onClick={handleLinkClick}>
+              <Link to="/SarahKB/contact" className="nav-link" onClick={handleLinkClick}>
                 <IoMdContacts />
                 <br />
                 Contact
               </Link>
             </li>
             <li className="nav-item">
-              <Link to="/pricing" className="nav-link" onClick={handleLinkClick}>
+              <Link to="/SarahKB/pricing" className="nav-link" onClick={handleLinkClick}>
                 <IoPricetagsOutline />
                 <br />
                 Pricing
               </Link>
             </li>
             <li className="nav-item">
-              <Link to="/" className="nav-link active" aria-current="page" onClick={handleLinkClick}>
+              <Link to="/SarahKB/" className="nav-link active" aria-current="page" onClick={handleLinkClick}>
                 <CgProfile />
                 <br />
                 Home
