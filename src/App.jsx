@@ -11,7 +11,7 @@ import Contact from '../pages/Contact.jsx'
 function App() {
 
   return (
-    <Router basename="/SarahKB">
+    <Router>
       <Navbar />
       <Routes>
         <Route path="/" element={<Landing />} />  
