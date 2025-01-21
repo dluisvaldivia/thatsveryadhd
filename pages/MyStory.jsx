@@ -1,4 +1,5 @@
 import React from 'react';
+import sarahprofile from '../src/assests/sarahprofile.png';
 
 export default function MyStory() {
 
@@ -7,7 +8,7 @@ export default function MyStory() {
         <div className="container">
             <div className="row justify-content-center justify-content-md-start">
                 <div className='col-5 col-md-4 py-3 mt-4'>
-                    <img src='../assests/sarahprofile.png' className="img-fluid rounded float-start" alt="sarahK.B"></img>
+                    <img src={sarahprofile} className="img-fluid rounded float-start" alt="sarahK.B"></img>
                 </div>
                 <div className='col-12 col-md-8'>
                     <h1>My story</h1>

@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import './app.css'
+import './App.css'
 import './index.css'
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 import Navbar from '../components/Navbar.jsx'
@@ -9,10 +9,11 @@ import Pricing from '../pages/Pricing.jsx'
 import Landing from '../pages/Landing.jsx'
 import Contact from '../pages/Contact.jsx'
 
+
 function App() {
 
   return (
-    <Router>
+    <Router basename="/SarahKB">
       <Navbar />
       <Routes>
         <Route path="/" element={<Landing />} />  
