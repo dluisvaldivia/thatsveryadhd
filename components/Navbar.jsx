@@ -40,13 +40,13 @@ export default function Navbar() {
   return (
     <nav className="navbar navbar-expand-lg bg-body-tertiary" ref={navbarRef}>
       <div className="container-fluid">
-        <Link to="/" className="navbar-brand ms-5" onClick={handleLinkClick}>
+        <Link to="/" className="navbar-brand ms-5 me-3" onClick={handleLinkClick}>
           Sarah K.B.
         </Link>
         <button
           className="navbar-toggler"
           type="button"
-          onClick={handleCollapseToggle} // Toggle the collapse state
+          onClick={handleCollapseToggle}
           aria-controls="navbarNavDropdown"
           aria-expanded={!collapsed}
           aria-label="Toggle navigation"

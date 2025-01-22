@@ -25,7 +25,7 @@ footer {
 }
 
 .icon-spacing li {
-  margin-right: 1rem;
+  margin-right: 1.3rem;
 }
 
 ul {
@@ -36,3 +36,17 @@ abbr {
   font-weight: 600;
 }
 
+@keyframes colorChange {
+  0% { color: #52be80; }
+  16.7% { color: #16a085; }
+  33.3% { color: #3498db; }
+  50% { color: #8e44ad; }
+  66.7% { color: #e74c3c; }
+  83.3% { color: #f39c12; }
+  95% { color:#2ecc71; }
+  100% { color: #52be80; }
+}
+
+.colorful-text {
+  animation: colorChange 10s linear infinite; /* Increased duration for smoother transition */
+}
