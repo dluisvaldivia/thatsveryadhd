@@ -37,7 +37,7 @@ export default function Contact() {
     } */
 
     return (
-        <div className="container contacts-container mb-5 pb-5 mt-5">
+        <div className="container contacts-container mb-5 pb-5 mt-4">
             <div className="row my-3 d-flex justify-content-center">
                 <div className="col-11 col-md-6">
                     <form action="https://formsubmit.co/e76047e5a345e07112815e4ff91bd5f4" method="POST">

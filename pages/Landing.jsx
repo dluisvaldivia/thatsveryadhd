@@ -12,7 +12,11 @@ export default function Landing() {
                 </div>
                 <div className="row mt-3">
                     <p className="lead">
-                        I'm Sarah K.B., a certified ADHD coach dedicated to helping neurodivergent individuals thrive. With a personal journey navigating ADHD and parenting two neurodivergent children, I offer customized coaching that embraces your unique brain. With experience in education, a passion for neurodiversity, and a multicultural perspective, I'm here to guide you in unlocking your strengths and reaching your full potential. Let's work together to create a path that works for you.
+                        I'm Sarah K.B., a certified ADHD coach dedicated to helping neurodivergent individuals thrive. 
+                        With a personal journey navigating ADHD and parenting two neurodivergent children, I offer customized 
+                        coaching that embraces your unique brain. With experience in education, a passion for neurodiversity, and 
+                        a multicultural perspective, I'm here to guide you in unlocking your strengths and reaching your full potential. 
+                        Let's work together to create a path that works for you.
                     </p>
                 </div>
             </div>

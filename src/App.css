@@ -1,25 +1,23 @@
-/* Ensure full height for the page */
 html, body {
-  height: 100%; /* Full height for the entire page */
-  margin: 0; /* Reset default margin */
-  display: flex; /* Using flexbox for layout */
-  flex-direction: column; /* Stack content in a column */
+  height: 100%;
+  margin: 0; 
+  display: flex;
+  flex-direction: column; 
 }
 
 #root {
   text-align: center;
-  flex-direction: column; /* Make sure all elements in root are vertically aligned */
-  display: flex; /* Flexbox layout for the whole root */
-  min-height: 100%; /* Ensure the root takes up full height */
+  flex-direction: column;
+  display: flex; 
+  min-height: 100%; 
 }
 
 .app-container {
-  flex-grow: 1; /* Allow the content to take up all available space */
+  flex-grow: 1;
 }
 
-/* Footer will stay at the bottom */
 footer {
-  margin-top: auto; /* This ensures the footer stays at the bottom */
+  margin-top: auto;
 }
 
 .compact-text p {
@@ -29,3 +27,12 @@ footer {
 .icon-spacing li {
   margin-right: 1rem;
 }
+
+ul {
+  list-style-type: none;
+}
+
+abbr {
+  font-weight: 600;
+}
+
