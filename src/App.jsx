@@ -8,6 +8,7 @@ import MyStory from '../pages/MyStory.jsx'
 import Pricing from '../pages/Pricing.jsx'
 import Landing from '../pages/Landing.jsx'
 import Contact from '../pages/Contact.jsx'
+import NotFound from '../pages/NotFound.jsx'
 
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
         <Route path="/my-story" element={<MyStory />} />
         <Route path="/pricing" element={<Pricing />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="*" element={<NotFound />} />
       </Routes>
       <Footer />
     </Router>
