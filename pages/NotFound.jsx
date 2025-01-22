@@ -1,4 +1,3 @@
-// filepath: /workspaces/site/pages/NotFound.jsx
 import React, { useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 
@@ -7,7 +6,7 @@ export default function NotFound() {
 
     useEffect(() => {
         const path = window.location.pathname;
-        const redirectTo = '/SarahKB'; // Adjust the base path if necessary
+        const redirectTo = '/SarahKB' + path; // Adjust the base path if necessary
         navigate(redirectTo, { replace: true });
     }, [navigate]);
 
