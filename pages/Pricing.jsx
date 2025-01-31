@@ -19,33 +19,34 @@ export default function Pricing() {
                     <h1>Pricing</h1>
                     <div><h3 className="fw-light">How does it work?</h3></div>
                     <div className="text-start ms-5">
-                    <div><h4>1 · Purchase a single session or a pack.</h4></div>
-                    <div><h4>2 · schedule an appointment with me!</h4></div>
-                    <div><h4>3 · use it whenever! it expires 1 year from the purchase date.</h4></div>
+                        <div><h4>1 · Purchase a single session or a pack.</h4></div>
+                        <div><h4>2 · schedule an appointment with me!</h4></div>
+                        <div><h4>3 · use it whenever! it expires 1 year from the purchase date.</h4></div>
                     </div>
                 </div>
             </div>
 
             <div className="row">
-                <div className="col-12 col-md-6 ">
-                    <div className="p-3 m-1 text-bg-dark rounded-3">
+                <div className="col-12 col-md-6">
+                    <div className="p-3 m-1 rounded-3" id="card1">
                         <h2>1 session</h2>
+                        <p className="mb-2">€95 (Standard price)</p>
                         <p>valid until: {validUntilDate}</p>
                         <stripe-buy-button
-                            buy-button-id="buy_btn_1QgUpCJ7yLUxkVnSG2aOLHJK"
-                            publishable-key="pk_test_51QgUfiJ7yLUxkVnS9jvSW6eIWuwpGb8Afh04V8WZWKdSEuJ7y3mhojCon5jIDPmnUgTtHkwAR1nEIW1mhi601JUM00ykBBZDHy"
-                        >
+                            buy-button-id="buy_btn_1Qk68rJJ348INgpDYdwNztnp"
+                            publishable-key="pk_live_51QhtYjJJ348INgpDxRtCPvgZMsdMYh3nPtGdCaqZxeKC1895w0GCIlk4vobLLC2UeCwQqXqx5si9qRf3F6Dw8cwD00YJ28S2nw"                      >
                         </stripe-buy-button>
                     </div>
                 </div>
 
                 <div className='col-12 col-md-6'>
-                    <div className="p-3 m-1 bg-body-tertiary border rounded-3">
-                        <h2>5 session-pack</h2>
+                    <div className="p-3 m-1 border rounded-3" id="card2">
+                        <h2>4-session pack</h2>
+                        <p className="mb-2">€360 (€90 per session, 5% discount)</p>
                         <p>valid until: {validUntilDate}</p>
                         <stripe-buy-button
-                            buy-button-id="buy_btn_1QgV39J7yLUxkVnSVhATEuw3"
-                            publishable-key="pk_test_51QgUfiJ7yLUxkVnS9jvSW6eIWuwpGb8Afh04V8WZWKdSEuJ7y3mhojCon5jIDPmnUgTtHkwAR1nEIW1mhi601JUM00ykBBZDHy"
+                            buy-button-id="buy_btn_1QnOIZJJ348INgpDksZ7VvGJ"
+                            publishable-key="pk_live_51QhtYjJJ348INgpDxRtCPvgZMsdMYh3nPtGdCaqZxeKC1895w0GCIlk4vobLLC2UeCwQqXqx5si9qRf3F6Dw8cwD00YJ28S2nw"
                         >
                         </stripe-buy-button>
                     </div>
@@ -54,8 +55,9 @@ export default function Pricing() {
 
             <div className="row mb-5">
                 <div className="col-12 col-md-6">
-                    <div className="p-4 m-1 text-bg-dark border rounded-3">
-                        <h2>10 session-pack</h2>
+                    <div className="p-4 m-1 border rounded-3" id="card3">
+                        <h2>8-session pack</h2>
+                        <p className="mb-2">€680 (€85 per session, 10% discount)</p>
                         <p>valid until: {validUntilDate}</p>
                         <stripe-buy-button
                             buy-button-id="buy_btn_1QgUpCJ7yLUxkVnSG2aOLHJK"
@@ -67,8 +69,9 @@ export default function Pricing() {
 
 
                 <div className="col-12 col-md-6">
-                    <div className="p-4 m-1 bg-body-tertiary rounded-3">
-                        <h2>20 session-pack</h2>
+                    <div className="p-4 m-1 rounded-3" id="card4">
+                        <h2>12-session pack</h2>
+                        <p className="mb-2">€960 (€80 per session, 15% discount)</p>
                         <p>valid until: {validUntilDate}</p>
                         <stripe-buy-button
                             buy-button-id="buy_btn_1QgUpCJ7yLUxkVnSG2aOLHJK"

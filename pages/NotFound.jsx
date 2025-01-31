@@ -6,7 +6,7 @@ export default function NotFound() {
 
     useEffect(() => {
         const path = window.location.pathname;
-        const redirectTo = '/SarahKB' + path; // Adjust the base path if necessary
+        const redirectTo = '/';
         navigate(redirectTo, { replace: true });
     }, [navigate]);
 

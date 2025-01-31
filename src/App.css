@@ -1,20 +1,28 @@
-html, body {
-  height: 100%;
-  margin: 0; 
-  display: flex;
-  flex-direction: column; 
-}
-
 #root {
   text-align: center;
   flex-direction: column;
   display: flex; 
   min-height: 100%; 
+  --color-primary: hsl(162, 92%, 49%);
+  --color-secondary: hsl(232, 29%, 59%);
+  --color-tertiary: hsl(348, 80%, 20%);
+  --color-accent: hsl(228, 80%, 20%);
 }
 
-.app-container {
-  flex-grow: 1;
+html, body {
+  height: 100%;
+  margin: 0; 
+  display: flex;
+  flex-direction: column;
 }
+body{
+  background-color: var(--color-primary);
+}
+
+.containter{
+  background-color: var(--color-primary);
+}
+
 
 footer {
   margin-top: auto;
