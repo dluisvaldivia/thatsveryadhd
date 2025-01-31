@@ -3,10 +3,7 @@
   flex-direction: column;
   display: flex; 
   min-height: 100%; 
-  --color-primary: hsl(162, 92%, 49%);
-  --color-secondary: hsl(232, 29%, 59%);
-  --color-tertiary: hsl(348, 80%, 20%);
-  --color-accent: hsl(228, 80%, 20%);
+
 }
 
 html, body {

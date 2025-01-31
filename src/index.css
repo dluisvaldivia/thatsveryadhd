@@ -28,24 +28,36 @@ body {
 }
 
 #card1 {
-   background-color:hsl(232, 29%, 95%);
+   background-color:hsl(203, 30%, 95%);
 }
 
 #card2 {
-  background-color: hsl(232, 29%, 90%);
+  background-color: hsl(203, 30%, 90%);
 }
 
 #card3 {
-  background-color: hsl(232, 29%, 85%);
+  background-color: hsl(203, 30%, 85%);
 }
 
 #card4 {
-  background-color: hsl(232, 29%, 80%);
+  background-color: hsl(203, 30%, 80%);
 }
+
+#navbar1 {
+  background-color: #2F4858
+}
+
+.nav-link {
+  color: #F6AE2D !important; /* Ensure it overrides Bootstrap defaults */
+}
+
+.nav-link svg {
+  color: #F6AE2D !important;}
 
 footer {
   margin-bottom: 0px;
   margin-top: auto;
+  background-color: #2F4858
 }
 
 h1{

@@ -38,9 +38,9 @@ export default function Navbar() {
   };
 
   return (
-    <nav className="navbar navbar-expand-lg bg-body-tertiary" ref={navbarRef}>
+    <nav className="navbar navbar-expand-lg" id="navbar1" ref={navbarRef}>
       <div className="container-fluid">
-        <Link to="/" className="navbar-brand ms-5 me-3" onClick={handleLinkClick}>
+        <Link to="/" className="navbar-brand ms-lg-3 me-lg-5 ms-sm-2 nav-link" onClick={handleLinkClick}>
           Sarah K.B.
         </Link>
         <button
