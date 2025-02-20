@@ -40,7 +40,7 @@ export default function Contact() {
         <div className="container contacts-container mb-5 pb-5 mt-4">
             <div className="row my-3 d-flex justify-content-center">
                 <div className="col-11 col-md-6">
-                    <form action="https://formsubmit.co/e76047e5a345e07112815e4ff91bd5f4" method="POST">
+                    <form action="https://formsubmit.co/23000dbf4f026d79ed1bba2722c601aa" method="POST">
                         <h1>Let's chat</h1>
                         <div className="form-group mb-3 mt-3">
                             <label htmlFor="contact.name" className="form-label">What's your name?</label>
@@ -53,7 +53,7 @@ export default function Contact() {
                         <div className="form-group">
                             <label htmlFor="contact.message">What do you want to talk about?</label>
                             <textarea name="message" type="text" className="form-control" id="contact.message" rows="5" value={inputMessage} onChange={(e) => setInputMessage(e.target.value)}></textarea>
-                            <input type="hidden" name="_url" value="https://silver-orbit-v6ppvx5pgwg3w5vw-5173.app.github.dev/contact"/>
+                            <input type="hidden" name="_url" value="https://thatsveryadhd.com"/>
                         </div>
                         <button type="submit" className="btn btn-primary mt-3">Submit</button>
                     </form>

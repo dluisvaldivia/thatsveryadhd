@@ -40,9 +40,11 @@ export default function Navbar() {
   return (
     <nav className="navbar navbar-expand-lg" id="navbar1" ref={navbarRef}>
       <div className="container-fluid">
+
         <Link to="/" className="navbar-brand ms-lg-3 me-lg-5 ms-sm-2 nav-link" onClick={handleLinkClick}>
-          Sarah K.B.
+          That's very ADHD!
         </Link>
+
         <button
           className="navbar-toggler"
           type="button"
@@ -50,14 +52,13 @@ export default function Navbar() {
           aria-controls="navbarNavDropdown"
           aria-expanded={!collapsed}
           aria-label="Toggle navigation"
-          ref={toggleRef}
-        >
+          ref={toggleRef}>
           <span className="navbar-toggler-icon"></span>
         </button>
-        <div
-          className={`collapse navbar-collapse ${!collapsed ? 'show' : ''}`}
-          id="navbarNavDropdown"
-        >
+
+        <div className={`collapse navbar-collapse ${!collapsed ? 'show' : ''}`}
+          id="navbarNavDropdown">
+            
           <ul className="navbar-nav icon-spacing ms-3">
             <li className="nav-item">
               <Link to="/my-story" className="nav-link" onClick={handleLinkClick}>

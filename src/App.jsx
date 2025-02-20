@@ -14,7 +14,7 @@ import NotFound from '../pages/NotFound.jsx'
 function App() {
 
   return (
-    <Router basename="/SarahKB">
+    <Router basename="/">
       <Navbar />
       <Routes>
         <Route path="/" element={<Landing />} />  

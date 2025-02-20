@@ -1,13 +1,9 @@
+import { defineConfig } from 'vite'
+import react from '@vitejs/plugin-react'
+/* import * as path from 'path'; */
+
+// https://vite.dev/config/
 export default defineConfig({
   base: '/',
-  plugins: [
-    React(),
-    {
-      name: 'add-cname',
-      closeBundle() {
-        const cnamePath = path.resolve('dist/assets/CNAME')
-        writeFileSync(cnamePath, 'thatsveryadhd.com')
-      },
-    },
-  ],
+  plugins: [react()],
 })

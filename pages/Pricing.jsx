@@ -14,16 +14,26 @@ export default function Pricing() {
 
     return (
         <div className="container my-4">
+
             <div className="row justify-content-center">
-                <div className="col-12 col-md-6 my-3">
+                <div className="col-10 col-md-8 my-3 ">
                     <h1>Pricing</h1>
-                    <div><h3 className="fw-light">How does it work?</h3></div>
-                    <div className="text-start ms-5">
+                </div>
+
+                <div className="row justify-content-center">
+                    <div>
+                        <h3 className="fw-light">How does it work?</h3>
+                    </div>
+                </div>
+
+                <div className='row'>
+                    <div className="col-lg-6 col-md-10 ms-5 text-start">
                         <div><h4>1 · Purchase a single session or a pack.</h4></div>
                         <div><h4>2 · schedule an appointment with me!</h4></div>
                         <div><h4>3 · use it whenever! it expires 1 year from the purchase date.</h4></div>
                     </div>
                 </div>
+
             </div>
 
             <div className="row">
