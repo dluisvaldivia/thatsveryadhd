@@ -1,41 +1,55 @@
 <!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>That's Very ADHD</title>
+    <style>
+      .calendly-badge-widget {
+        bottom: 30px !important;
+      }
+body {
+  background-image: url('/assets/background-D95qzdPX.png');
+  background-repeat: no-repeat;
+  background-attachment: fixed;  
+  background-size: cover;
+}
 
-<head>
-  <meta charset="UTF-8" />
-  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-  <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <script async src="https://js.stripe.com/v3/buy-button.js">
-  </script>
+    </style>
+    <script type="module" crossorigin src="/assets/index-DcfM0Hcd.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-BGx67Yfb.css">
+  </head>
+  <body>
+    <div id="root"></div>
 
-  <title>Sarah K.B.</title>
-  <style>
-    .calendly-badge-widget {
-      bottom: 30px !important;
-    }
-  </style>
-  <script type="module" crossorigin src="/assets/index-C0Ufwkf-.js"></script>
-  <link rel="stylesheet" crossorigin href="/assets/index-DjhL-a3z.css">
-</head>
+    <!-- Stripe payments script -->
+    <script async src="https://js.stripe.com/v3/buy-button.js"></script>
 
-<body>
+    <!-- Calendly widget script -->
+    <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
 
-  <div id="root"></div>
-  <!-- stripe payments -->
-  <script async src="https://js.stripe.com/v3/buy-button.js"></script>
-  <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
-  <script src="https://smtpjs.com/v3/smtp.js"></script>
-  <script type="text/javascript">
-    window.onload = function () {
-      Calendly.initBadgeWidget({
-        url: 'https://calendly.com/sarahbuendia/1stmeeting',
-        text: 'Schedule time with me',
-        color: '#F6AE2D',
-        textColor: '#33648A'
-      });
-    };
-  </script>
-</body>
-
+    <!-- SMTPJS -->
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script type="text/javascript">
+      window.onload = function () {
+        try {
+          Calendly.initBadgeWidget({
+            url: 'https://calendly.com/sarahbuendia/1stmeeting',
+            text: 'Schedule time with me',
+            color: '#F6AE2D',
+            textColor: '#33648A'
+          });
+        } catch (error) {
+          console.error("Calendly failed to initialize:", error);
+          // fallback UI.
+          const calendlyContainer = document.getElementById("calendly-container");
+      if (calendlyContainer) {
+        calendlyContainer.innerHTML = '<p>Scheduling is currently unavailable. Please try again later or contact us directly.</p>';
+      }
+        }
+      };
+    </script>
+  </body>
 </html>
