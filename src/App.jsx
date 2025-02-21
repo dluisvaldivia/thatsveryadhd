@@ -9,7 +9,7 @@ import Pricing from '../pages/Pricing.jsx'
 import Landing from '../pages/Landing.jsx'
 import Contact from '../pages/Contact.jsx'
 import NotFound from '../pages/NotFound.jsx'
-
+import PrivacyPolicy from '../pages/PrivacyPolicy.jsx'
 
 function App() {
 
@@ -22,6 +22,7 @@ function App() {
         <Route path="/pricing" element={<Pricing />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="*" element={<NotFound />} />
+        <Route path="/privacy-policy" element={<PrivacyPolicy/>} />
       </Routes>
       <Footer />
     </Router>

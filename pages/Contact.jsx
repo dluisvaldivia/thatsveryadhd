@@ -55,7 +55,7 @@ export default function Contact() {
                             <textarea name="message" type="text" className="form-control" id="contact.message" rows="5" value={inputMessage} onChange={(e) => setInputMessage(e.target.value)}></textarea>
                             <input type="hidden" name="_url" value="https://thatsveryadhd.com"/>
                         </div>
-                        <button type="submit" className="btn btn-primary mt-3">Submit</button>
+                        <button type="submit" className="btn btn-primary mt-3" style={{backgroundColor: '#F6AE2D'}}>Submit</button>
                     </form>
                    {/*  {formStatus && <div className="form-status mt-3">{formStatus}</div>} */}
                 </div>

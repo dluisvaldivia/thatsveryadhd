@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 export default function Footer() {
 
@@ -7,7 +8,8 @@ export default function Footer() {
             <footer className="text-white">
 
                 <div className="text-center py-3">
-                    <small>&copy; 2025 Sarah K.B. All rights reserved.</small>
+                    
+                    <small> Developed by <a href='https://github.com/dluisvaldivia' target='blank' id="footerlink">ValdiviaMedia</a> &copy; All rights reserved. <Link to="/privacy-policy" id="footerlink">Privacy Policy</Link></small>
                 </div>
             </footer>
         </>

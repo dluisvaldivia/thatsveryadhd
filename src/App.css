@@ -55,3 +55,9 @@ abbr {
 .colorful-text {
   animation: colorChange 10s linear infinite; /* Increased duration for smoother transition */
 }
+
+a:hover { text-shadow: 0 0 5px #03cafc; }
+
+#footerlink {
+  color: #F6AE2D;
+}
