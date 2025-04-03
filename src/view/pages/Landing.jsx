@@ -7,9 +7,9 @@ export default function Landing() {
             <div className="row d-flex text-start">
                 <div className="col compact-text">
                     <p style={{ fontSize: '24px', fontWeight: 'bold' }}>Hello.</p>
-                    <p className="mt-2" style={{ fontSize: '39px', fontWeight: 'bold' }}>I'm <span>sarah</span>,</p>
-                    <p style={{ fontSize: '55px', fontWeight: 'bold' }}>you <span style={{ color: '#c603fc' }}>new </span> 
-                    <span style={{ color: '#fcba03' }}>favourite </span><span className="colorful-text">ADHD </span><u>coach</u>.</p>
+                    <p className="mt-2" style={{ fontSize: '39px', fontWeight: 'bold' }}>I'm sarah,</p>
+                    <p style={{ fontSize: '55px', fontWeight: 'bold' }}>your new
+                    favourite <span className="colorful-text">ADHD </span>coach.</p>
                 </div>
                 <div className="row mt-3">
                     <p className="lead">

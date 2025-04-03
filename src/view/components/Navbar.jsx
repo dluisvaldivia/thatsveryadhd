@@ -81,13 +81,7 @@ export default function Navbar() {
                 Pricing
               </Link>
             </li>
-            <li className="nav-item">
-              <Link to="/" className="nav-link active" aria-current="page" onClick={handleLinkClick}>
-                <CgProfile />
-                <br />
-                Home
-              </Link>
-            </li>
+          
           </ul>
         </div>
       </div>

@@ -1,5 +1,5 @@
 import React from 'react';
-import sarahprofile from '../src/assests/sarahprofile.png';
+import sarahprofile from '../../assests/sarahprofile.png';
 
 export default function MyStory() {
 

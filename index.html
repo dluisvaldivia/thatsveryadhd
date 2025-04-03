@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+    <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>That's Very ADHD</title>
     <style>
@@ -27,26 +28,39 @@ body {
     <script async src="https://js.stripe.com/v3/buy-button.js"></script>
 
     <!-- Calendly widget script -->
-    <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+    <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+    
+    <!-- Accessible Calendly Button -->
+    <button id="calendly-accessible-button" style="position: fixed; bottom: 30px; right: 30px; background-color: #F6AE2D; color: #33648A; border: none; padding: 10px 20px; border-radius: 25px; cursor: pointer;">
+      Schedule time with me
+    </button>
 
     <!-- SMTPJS -->
     <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script type="text/javascript">
       window.onload = function () {
         try {
+          // Initialize Calendly Badge Widget
           Calendly.initBadgeWidget({
-            url: 'https://calendly.com/sarahbuendia/1stmeeting',
+            url: 'https://calendly.com/sarahbuendia/curiosity-call',
             text: 'Schedule time with me',
             color: '#F6AE2D',
             textColor: '#33648A'
           });
         } catch (error) {
           console.error("Calendly failed to initialize:", error);
-          // fallback UI.
           const calendlyContainer = document.getElementById("calendly-container");
-      if (calendlyContainer) {
-        calendlyContainer.innerHTML = '<p>Scheduling is currently unavailable. Please try again later or contact us directly.</p>';
-      }
+          if (calendlyContainer) {
+            calendlyContainer.innerHTML = '<p>Scheduling is currently unavailable. Please try again later or contact us directly.</p>';
+          }
+        }
+
+        // Add click event to the accessible button
+        const calendlyButton = document.getElementById("calendly-accessible-button");
+        if (calendlyButton) {
+          calendlyButton.addEventListener("click", function () {
+            Calendly.showPopupWidget('https://calendly.com/sarahbuendia/curiosity-call');
+          });
         }
       };
     </script>
