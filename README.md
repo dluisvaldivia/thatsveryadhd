@@ -1,6 +1,6 @@
 # That's Very ADHD
 
-This is a responsive and user-friendly website designed to promote Sarah K. Buendia's ADHD coaching services. The site integrates scheduling, payment, and informational features to streamline client interactions and enhance user experience.  
+This is a responsive and user-friendly website designed to promote Sarah K. Buendia's ADHD coaching services. The site integrates scheduling, payment, and informational features. 
   
 ## Features  
 - **My Story Page**: Introduces Sarah, her journey, and her mission to help individuals with ADHD.  
