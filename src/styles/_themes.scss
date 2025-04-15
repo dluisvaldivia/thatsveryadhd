@@ -1,0 +1,18 @@
+@use "./variables" as vars;
+
+:root {
+  --bg-color: #{vars.$light-bg};
+  --text-color: #{vars.$light-text};
+  --font: 'Poppins', sans-serif;
+  --color-accent: #{vars.$light-accent};
+  --navbar-text-color: #{vars.$light-text}; // Add this
+  --navbar-icon-color: #{vars.$light-accent}; // Add this
+}
+
+[data-theme="dark"] {
+  --bg-color: #{vars.$dark-bg};
+  --text-color: #{vars.$dark-text};
+  --color-accent: #{vars.$dark-accent};
+  --navbar-text-color: #{vars.$dark-text}; // Add this
+  --navbar-icon-color: #{vars.$dark-accent}; // Add this
+}

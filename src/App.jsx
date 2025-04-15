@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import './styles/global.scss'
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 import Navbar from './view/components/Navbar.jsx'
@@ -9,8 +9,11 @@ import Landing from './view/pages/Landing.jsx'
 import Contact from './view/pages/Contact.jsx'
 import NotFound from './view/pages/NotFound.jsx'
 import PrivacyPolicy from './view/pages/PrivacyPolicy.jsx'
+import {getInitialTheme, setTheme} from './controllers/themeController.js'
 
 function App() {
+  useEffect(() => {setTheme(getInitialTheme())}, []);
+
 
   return (
     <Router basename="/">
@@ -18,7 +21,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Landing />} />  
         <Route path="/my-story" element={<MyStory />} />
-        <Route path="/pricing" element={<Pricing />} />
+        {/* <Route path="/pricing" element={<Pricing />} /> */}
         <Route path="/contact" element={<Contact />} />
         <Route path="*" element={<NotFound />} />
         <Route path="/privacy-policy" element={<PrivacyPolicy/>} />

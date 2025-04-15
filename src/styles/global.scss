@@ -1,21 +1,22 @@
-:root {
-    font-family: Verdana, Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-    line-height: 1.5;
-   
-    box-sizing: border-box;
+@use "./variables" as vars;
+@use "./themes";
   
-    font-synthesis: none;
-    text-rendering: optimizeLegibility;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-  }
-  
-  body {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  #card1 {
+
+
+body, #root {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: background 0.3s, color 0.3s;
+  font-family: var(--font);
+  width: 100vw;
+  height: 100vh;
+  text-align: center;
+  flex-direction: column;
+  display: flex; 
+  min-height: 100%; 
+}
+
+ /*  #card1 {
      background-color:hsl(203, 30%, 90%);
   }
   
@@ -24,83 +25,49 @@
   }
   
   #card3 {
-    background-color: hsl(203, 30%, 80%);
+    background-color: var(--bg-color);
   }
   
   #card4 {
     background-color: hsl(203, 30%, 75%);
-  }
-  
-  #navbar1 {
-    background-color: #2F4858
-  }
-  
-  .nav-link {
-    color: #F6AE2D !important;
-  }
-  
-  .nav-link svg {
-    color: #F6AE2D !important;}
+  } */
   
   footer {
     margin-bottom: 0px;
     margin-top: auto;
-    background-color: #2F4858
+    background-color: var(--bg-color)
   }
-  
+  text {
+    color: var(--text-color);
+  }
   h1{
-    color: var(--color-secondary);
+    color: var(--text-color);
     font-size: 3.2em;
     line-height: 1.1;
   }
-  
-  a {
-    font-weight: 500;
-    color: #646cff;
-    text-decoration: inherit;
+
+  nav {
+    color: var(--navbar-text-color); // Use the navbar text color variable
   }
-  
-  a:hover {
-    color: #535bf2;
+
+  .nav-link {
+    color: var(--navbar-text-color); // Ensure links use the correct color
+    transition: color 0.3s ease; // Smooth transition for theme changes
   }
-  
+
+  .nav-link:hover {
+    color: var(--color-accent); // Highlight links on hover
+  }
+
+  .navbar-toggler-icon {
+    background-color: var(--navbar-icon-color); // Use the icon color variable
+    transition: background-color 0.3s ease; // Smooth transition for theme changes
+  }
+
   .btn-primary {
-    --bs-btn-border-color: #F6AE2D !important;
+    color: var(--text-color)
   }
-  
-  button:hover {
-    color: #646cff;
-  }
-  
-  
-  
-  #root {
-    text-align: center;
-    flex-direction: column;
-    display: flex; 
-    min-height: 100%; 
-  
-  }
-  
-  html, body {
-    height: 100%;
-    margin: 0; 
-    display: flex;
-    flex-direction: column;
-  }
-  body{
-    background-color: var(--color-primary);
-  }
-  
-  .containter{
-    background-color: var(--color-primary);
-  }
-  
-  
-  footer {
-    margin-top: auto;
-  }
-  
+
   .compact-text p {
     margin-bottom: -5px;
   }
@@ -131,9 +98,4 @@
   .colorful-text {
     animation: colorChange 10s linear infinite; /* Increased duration for smoother transition */
   }
-  
-  a:hover { text-shadow: 0 0 5px #03cafc; }
-  
-  #footerlink {
-    color: #F6AE2D;
-  }
+

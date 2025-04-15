@@ -1,9 +1,10 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { IoPricetagsOutline } from "react-icons/io5";
-import { CgProfile } from "react-icons/cg";
 import { IoChatbubblesOutline } from "react-icons/io5";
 import { IoMdContacts } from "react-icons/io";
+import { RiCalendarScheduleLine } from "react-icons/ri";
 import { Link } from 'react-router-dom';
+import ThemeToggle from "./ThemeToggle";
 
 export default function Navbar() {
   const [collapsed, setCollapsed] = useState(true); // State for navbar collapse
@@ -58,7 +59,7 @@ export default function Navbar() {
 
         <div className={`collapse navbar-collapse ${!collapsed ? 'show' : ''}`}
           id="navbarNavDropdown">
-            
+
           <ul className="navbar-nav icon-spacing ms-3">
             <li className="nav-item">
               <Link to="/my-story" className="nav-link" onClick={handleLinkClick}>
@@ -74,14 +75,25 @@ export default function Navbar() {
                 Contact
               </Link>
             </li>
-            <li className="nav-item">
+            
+            {/* <li className="nav-item">
               <Link to="/pricing" className="nav-link" onClick={handleLinkClick}>
                 <IoPricetagsOutline />
                 <br />
                 Pricing
               </Link>
+            </li> */}
+
+            <li className="nav-item">
+              <Link to="/pricing" className="nav-link" onClick={handleLinkClick}>
+              <RiCalendarScheduleLine />
+                <br />
+                Schedule
+              </Link>
             </li>
-          
+
+            <ThemeToggle />
+
           </ul>
         </div>
       </div>
