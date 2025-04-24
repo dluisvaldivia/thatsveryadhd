@@ -1,24 +1,24 @@
 import React from 'react';
+import Hero from '../components/Hero.jsx';
+import Contact from './Contact.jsx';
+import MyStory from './MyStory.jsx';
+import Calendly from '../components/Calendly.jsx';
 
 export default function Landing() {
 
     return (
         <div className="container mt-5">
             <div className="row d-flex text-start">
-                <div className="col compact-text">
-                    <p style={{ fontSize: '24px', fontWeight: 'bold' }}>Hello.</p>
-                    <p className="mt-2" style={{ fontSize: '39px', fontWeight: 'bold' }}>I'm sarah,</p>
-                    <p style={{ fontSize: '55px', fontWeight: 'bold' }}>your new
-                    favourite <span className="colorful-text">ADHD </span>coach.</p>
+
+                <Hero />
+                <div id="my-story">
+                    <MyStory />
                 </div>
-                <div className="row mt-3">
-                    <p className="lead">
-                        I'm Sarah K. Buendia, a certified <abbr title="Atencion Deficit & Hyperactivity Disorder" style={{fontWeight: 300}} >ADHD</abbr> specialized coach dedicated to helping neurodivergent individuals thrive. 
-                        With a personal journey navigating ADHD and parenting two neurodivergent children, I offer customized 
-                        coaching that embraces your unique brain. With experience in education, a passion for neurodiversity, and 
-                        a multicultural perspective, I'm here to guide you in unlocking your strengths and reaching your full potential. 
-                        Let's work together to create a path that works for you.
-                    </p>
+                <div id="contact-section">
+                    <Contact />
+                </div>
+                <div id="calendly-section">
+                    <Calendly />
                 </div>
             </div>
 

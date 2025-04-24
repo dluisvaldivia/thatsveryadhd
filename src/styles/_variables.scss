@@ -1,15 +1,19 @@
 // light-theme
 $light-bg: hsl(0, 0%, 98%);
-$light-text: hsl(200, 15%, 8%);
-$light-accent: hsl(200, 60%, 45%);
+$light-text: hsla(200, 15%, 8%, 0.897);
+$light-accent: hsla(0, 100%, 50%, 0.314);
+$light-accent-secondary: hsla(0, 98%, 63%, 0.151);
 $light-hover: hsl(200, 60%, 55%);
 $light-active: hsl(200, 60%, 35%);
 $light-link: hsl(200, 60%, 45%);
+$light-footer-text: hsla(0, 100%, 50%, 0.314);
 
 // dark theme
 $dark-bg: hsl(207, 26%, 25%);
 $dark-text: hsl(0, 0%, 100%);
-$dark-accent: hsl(200, 40%, 70%);
+$dark-accent: hsla(0, 100%, 50%, 0.685);
+$dark-accent-secondary: hsla(0, 100%, 50%, 0.671);
 $dark-hover: hsl(200, 40%, 80%);
 $dark-active: hsl(200, 40%, 60%);
 $dark-link: hsl(200, 40%, 70%);
+$dark-footer-text: hsl(0, 100%, 80%);;

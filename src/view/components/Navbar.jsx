@@ -4,6 +4,7 @@ import { IoChatbubblesOutline } from "react-icons/io5";
 import { IoMdContacts } from "react-icons/io";
 import { RiCalendarScheduleLine } from "react-icons/ri";
 import { Link } from 'react-router-dom';
+import thatsveryadhd from '../../assests/thatsveryadhd.png';
 import ThemeToggle from "./ThemeToggle";
 
 export default function Navbar() {
@@ -42,9 +43,7 @@ export default function Navbar() {
     <nav className="navbar navbar-expand-lg" id="navbar1" ref={navbarRef}>
       <div className="container-fluid">
 
-        <Link to="/" className="navbar-brand ms-lg-3 me-lg-5 ms-sm-2 nav-link" onClick={handleLinkClick}>
-          That's very ADHD!
-        </Link>
+        <img src={thatsveryadhd} alt="Logo" className="navbar-brand" id="logo" />
 
         <button
           className="navbar-toggler"
@@ -62,14 +61,7 @@ export default function Navbar() {
 
           <ul className="navbar-nav icon-spacing ms-3">
             <li className="nav-item">
-              <Link to="/my-story" className="nav-link" onClick={handleLinkClick}>
-                <IoChatbubblesOutline />
-                <br />
-                My Story
-              </Link>
-            </li>
-            <li className="nav-item">
-              <Link to="/contact" className="nav-link" onClick={handleLinkClick}>
+              <Link className="nav-link" onClick={() => document.getElementById('contact-section').scrollIntoView({ behavior: 'smooth' })}>
                 <IoMdContacts />
                 <br />
                 Contact
@@ -85,7 +77,7 @@ export default function Navbar() {
             </li> */}
 
             <li className="nav-item">
-              <Link to="/pricing" className="nav-link" onClick={handleLinkClick}>
+              <Link className="nav-link" onClick={() => document.getElementById('calendly-section').scrollIntoView({ behavior: 'smooth' })}>
               <RiCalendarScheduleLine />
                 <br />
                 Schedule

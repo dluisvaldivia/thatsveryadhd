@@ -2,10 +2,9 @@
 @use "./themes";
   
 
-
 body, #root {
-  background-color: var(--bg-color);
-  color: var(--text-color);
+  background-color: var(--bg-color) !important;
+  color: var(--text-color) !important;
   transition: background 0.3s, color 0.3s;
   font-family: var(--font);
   width: 100vw;
@@ -13,7 +12,7 @@ body, #root {
   text-align: center;
   flex-direction: column;
   display: flex; 
-  min-height: 100%; 
+  min-height: 100vh; 
 }
 
  /*  #card1 {
@@ -32,10 +31,11 @@ body, #root {
     background-color: hsl(203, 30%, 75%);
   } */
   
-  footer {
+  #footerlink{
+    color: (var(--footer-text));
     margin-bottom: 0px;
     margin-top: auto;
-    background-color: var(--bg-color)
+    background-color: none;
   }
   text {
     color: var(--text-color);
@@ -50,7 +50,7 @@ body, #root {
     color: var(--navbar-text-color); // Use the navbar text color variable
   }
 
-  .nav-link {
+  a.nav-link {
     color: var(--navbar-text-color); // Ensure links use the correct color
     transition: color 0.3s ease; // Smooth transition for theme changes
   }
@@ -65,7 +65,44 @@ body, #root {
   }
 
   .btn-primary {
-    color: var(--text-color)
+    background-color: var(--color-accent);
+    border: none;
+    font-size: 1.6rem;
+    color: var(--text-color);
+    border-radius: 3rem;
+    padding: 1rem;
+    transition-duration: 0.1s;
+  }
+
+  .btn-primary:hover {
+    background-color: rgba(255, 0, 0, 0.209);
+    box-shadow: 0 5px #666;
+    color: var(--text-color);
+  }
+
+  .btn-primary:active {
+    background-color: #a8cb0c;
+    box-shadow: 0 5px #666;
+  }
+
+  .btn-secondary {
+    background-color: var(--color-accent-secondary);
+    border: none;
+    font-size: 1.4rem;
+    color: var(--text-color);
+    border-radius: 3rem;
+    padding: 1rem;
+    transition-duration: 0.1s;
+  }
+  .btn-secondary:hover {
+    background-color: var(--color-accent-secondary);
+    box-shadow: 0 5px #666;
+    color: var(--text-color);
+  }
+
+  .btn-secondary:active {
+    background-color: #a8cb0c;
+    box-shadow: 0 5px #666;
   }
 
   .compact-text p {
@@ -86,11 +123,11 @@ body, #root {
   
   @keyframes colorChange {
     0% { color: #52be80; }
-    16.7% { color: #16a085; }
-    33.3% { color: #3498db; }
+    16% { color: #16a085; }
+    33% { color: #3498db; }
     50% { color: #8e44ad; }
-    66.7% { color: #e74c3c; }
-    83.3% { color: #f39c12; }
+    66% { color: #e74c3c; }
+    83% { color: #f39c12; }
     95% { color:#2ecc71; }
     100% { color: #52be80; }
   }
@@ -99,3 +136,10 @@ body, #root {
     animation: colorChange 10s linear infinite; /* Increased duration for smoother transition */
   }
 
+small {
+  color: var(--text-color)
+}
+
+#logo {
+  max-width: 15vw;
+}
