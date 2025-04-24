@@ -1,0 +1,23 @@
+@use "./variables" as vars;
+
+:root {
+  --bg-color: #{vars.$light-bg};
+  --text-color: #{vars.$light-text};
+  --font: "Overpass", sans-serif, system-ui, -apple-system;
+  --color-accent: #{vars.$light-accent};
+  --color-accent-secondary: #{vars.$light-accent-secondary};
+  --navbar-text-color: #{vars.$light-text}; 
+  --navbar-icon-color: #{vars.$light-accent};
+  --footer-text: #{vars.$light-footer-text};
+  --highlight: hsl(74, 100%, 50%);
+}
+
+[data-theme="dark"] {
+  --bg-color: #{vars.$dark-bg};
+  --text-color: #{vars.$dark-text};
+  --color-accent: #{vars.$dark-accent};
+  --color-accent-secondary: #{vars.$dark-accent-secondary};
+  --navbar-text-color: #{vars.$dark-text};
+  --navbar-icon-color: #{vars.$dark-accent};
+  --footer-text: #{vars.$dark-footer-text};
+}

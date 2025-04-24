@@ -1,6 +1,6 @@
 {
   "name": "my-react-app",
-  "homepage": "https://dluisvaldivia.github.io/SarahKB",
+  "homepage": "https://thatsveryadhd.com",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -31,7 +31,7 @@
     "eslint-plugin-react-refresh": "^0.4.16",
     "gh-pages": "^6.3.0",
     "globals": "^15.14.0",
-    "sass": "^1.83.1",
+    "sass": "^1.86.3",
     "vite": "^6.0.9"
   }
 }

@@ -1,0 +1,140 @@
+@use "./variables" as vars;
+@use "./themes";
+  
+
+body, #root {
+  background-color: var(--bg-color) !important;
+  color: var(--text-color) !important;
+  transition: background 0.3s, color 0.3s;
+  font-family: var(--font);
+  width: 100vw;
+  height: 100vh;
+  text-align: center;
+  flex-direction: column;
+  display: flex; 
+  min-height: 100vh; 
+}
+
+ /*  #card1 {
+     background-color:hsl(203, 30%, 90%);
+  }
+  
+  #card2 {
+    background-color: hsl(203, 30%, 85%);
+  }
+  
+  #card3 {
+    background-color: var(--bg-color);
+  }
+  
+  #card4 {
+    background-color: hsl(203, 30%, 75%);
+  } */
+  
+  #footerlink{
+    color: (var(--footer-text));
+    margin-bottom: 0px;
+    margin-top: auto;
+    background-color: none;
+  }
+  text {
+    color: var(--text-color);
+  }
+  h1{
+    color: var(--text-color);
+    font-size: 3.2em;
+    line-height: 1.1;
+  }
+
+  nav {
+    max-width: 95vw;
+  }
+
+  .nav-link {
+    color: var(--text-color);
+
+  }
+
+  .navbar-toggler-icon {
+    transition: background-color 0.3s ease; // Smooth transition for theme changes
+  }
+
+  .btn-primary {
+    background-color: var(--color-accent);
+    border: none;
+    font-size: 1.6rem;
+    color: var(--text-color);
+    border-radius: 3rem;
+    padding: 1rem;
+    transition-duration: 0.1s;
+  }
+
+  .btn-primary:hover {
+    background-color: rgba(255, 0, 0, 0.209);
+    box-shadow: 0 5px #666;
+    color: var(--text-color);
+  }
+
+  .btn-primary:active {
+    background-color: #a8cb0c;
+    box-shadow: 0 5px #666;
+  }
+
+  .btn-secondary {
+    background-color: var(--color-accent-secondary);
+    border: none;
+    font-size: 1.4rem;
+    color: var(--text-color);
+    border-radius: 3rem;
+    padding: 1rem;
+    transition-duration: 0.1s;
+  }
+  .btn-secondary:hover {
+    background-color: var(--color-accent-secondary);
+    box-shadow: 0 5px #666;
+    color: var(--text-color);
+  }
+
+  .btn-secondary:active {
+    background-color: #a8cb0c;
+    box-shadow: 0 5px #666;
+  }
+
+  .compact-text p {
+    margin-bottom: -5px;
+  }
+  
+  .icon-spacing li {
+    margin-right: 1.3rem;
+  }
+  
+  ul {
+    list-style-type: none;
+  }
+  
+  abbr {
+    font-weight: 600;
+  }
+  
+  @keyframes colorChange {
+    0% { color: #52be80; }
+    16% { color: #16a085; }
+    33% { color: #3498db; }
+    50% { color: #8e44ad; }
+    66% { color: #e74c3c; }
+    83% { color: #f39c12; }
+    95% { color:#2ecc71; }
+    100% { color: #52be80; }
+  }
+  
+  .colorful-text {
+    animation: colorChange 10s linear infinite; /* Increased duration for smoother transition */
+  }
+
+small {
+  color: var(--text-color)
+}
+
+#logo {
+  max-width: 15vw;
+}
