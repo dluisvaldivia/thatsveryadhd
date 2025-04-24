@@ -16,6 +16,7 @@ export default function Calendly() {
 
     return (
         <div className="container py-5">
+            <h1 className='text-center'>Schedule time with me</h1>
             {/* Calendly Inline Widget */}
             <div
                 className="calendly-inline-widget"

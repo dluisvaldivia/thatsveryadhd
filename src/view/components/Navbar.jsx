@@ -41,9 +41,8 @@ export default function Navbar() {
 
   return (
     <nav className="navbar navbar-expand-lg" id="navbar1" ref={navbarRef}>
-      <div className="container-fluid">
 
-        <img src={thatsveryadhd} alt="Logo" className="navbar-brand" id="logo" />
+        <Link to='/'><img src={thatsveryadhd} alt="Thats very adhd logo" className="navbar-brand ms-5 me-0" id="logo" target='/' /></Link>
 
         <button
           className="navbar-toggler"
@@ -56,39 +55,36 @@ export default function Navbar() {
           <span className="navbar-toggler-icon"></span>
         </button>
 
-        <div className={`collapse navbar-collapse ${!collapsed ? 'show' : ''}`}
-          id="navbarNavDropdown">
-
+        <div className={`collapse navbar-collapse ${!collapsed ? 'show' : ''}`} id="navbarNavDropdown">
           <ul className="navbar-nav icon-spacing ms-3">
             <li className="nav-item">
-              <Link className="nav-link" onClick={() => document.getElementById('contact-section').scrollIntoView({ behavior: 'smooth' })}>
+              <Link
+                className="btn-primary nav-link text-center"
+                onClick={() => document.getElementById('contact-section').scrollIntoView({ behavior: 'smooth' })}
+              >
                 <IoMdContacts />
                 <br />
                 Contact
               </Link>
             </li>
-            
-            {/* <li className="nav-item">
-              <Link to="/pricing" className="nav-link" onClick={handleLinkClick}>
-                <IoPricetagsOutline />
-                <br />
-                Pricing
-              </Link>
-            </li> */}
 
             <li className="nav-item">
-              <Link className="nav-link" onClick={() => document.getElementById('calendly-section').scrollIntoView({ behavior: 'smooth' })}>
-              <RiCalendarScheduleLine />
+              <Link
+                className="btn-primary nav-link text-center"
+                onClick={() => document.getElementById('calendly-section').scrollIntoView({ behavior: 'smooth' })}
+              >
+                <RiCalendarScheduleLine />
                 <br />
                 Schedule
               </Link>
             </li>
-
-            <ThemeToggle />
-
           </ul>
+
+          {/* Push ThemeToggle to the right */}
+          <div className="ms-auto">
+            <ThemeToggle className="btn-primary nav-link" />
+          </div>
         </div>
-      </div>
     </nav>
   );
 }

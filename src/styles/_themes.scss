@@ -9,6 +9,7 @@
   --navbar-text-color: #{vars.$light-text}; 
   --navbar-icon-color: #{vars.$light-accent};
   --footer-text: #{vars.$light-footer-text};
+  --highlight: hsl(74, 100%, 50%);
 }
 
 [data-theme="dark"] {

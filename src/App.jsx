@@ -22,10 +22,6 @@ function App() {
       <Navbar />
       <Routes>
         <Route path="/" element={<Landing />} />  
-        <Route path="/my-story" element={<MyStory />} />
-        {/* <Route path="/pricing" element={<Pricing />} /> */}
-        <Route path="/contact" element={<Contact />} />
-        <Route path="/schedule" element={<Schedule />} />
         <Route path="*" element={<NotFound />} />
         <Route path="/privacy-policy" element={<PrivacyPolicy/>} />
       </Routes>

@@ -47,20 +47,15 @@ body, #root {
   }
 
   nav {
-    color: var(--navbar-text-color); // Use the navbar text color variable
+    max-width: 95vw;
   }
 
-  a.nav-link {
-    color: var(--navbar-text-color); // Ensure links use the correct color
-    transition: color 0.3s ease; // Smooth transition for theme changes
-  }
+  .nav-link {
+    color: var(--text-color);
 
-  .nav-link:hover {
-    color: var(--color-accent); // Highlight links on hover
   }
 
   .navbar-toggler-icon {
-    background-color: var(--navbar-icon-color); // Use the icon color variable
     transition: background-color 0.3s ease; // Smooth transition for theme changes
   }
 
