@@ -9,6 +9,7 @@ import Landing from './view/pages/Landing.jsx'
 import Contact from './view/pages/Contact.jsx'
 import NotFound from './view/pages/NotFound.jsx'
 import Schedule from './view/pages/Schedule.jsx'
+import BackToTop from './view/components/backToTop.jsx'
 import PrivacyPolicy from './view/pages/PrivacyPolicy.jsx'
 import {getInitialTheme, setTheme} from './controllers/themeController.js'
 
@@ -26,6 +27,7 @@ function App() {
         <Route path="/privacy-policy" element={<PrivacyPolicy/>} />
       </Routes>
       <Footer />
+      <BackToTop />
     </Router>
   )
 }

@@ -3,6 +3,7 @@ import Hero from '../components/Hero.jsx';
 import Contact from './Contact.jsx';
 import MyStory from './MyStory.jsx';
 import Calendly from '../components/Calendly.jsx';
+import WhoIsFor from '../pages/WhoIsFor.jsx';
 
 export default function Landing() {
 
@@ -14,12 +15,16 @@ export default function Landing() {
                 <div id="my-story">
                     <MyStory />
                 </div>
-                <div id="contact-section">
-                    <Contact />
-                </div>
+                <div>
+                    <WhoIsFor />
+                 </div>
                 <div id="calendly-section">
                     <Calendly />
                 </div>
+                <div id="contact-section">
+                    <Contact />
+                </div>
+                
             </div>
 
         </div>

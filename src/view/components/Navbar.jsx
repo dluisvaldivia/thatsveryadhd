@@ -62,9 +62,10 @@ export default function Navbar() {
                 className="btn-primary nav-link text-center"
                 onClick={() => document.getElementById('contact-section').scrollIntoView({ behavior: 'smooth' })}
               >
-                <IoMdContacts />
+
+                <IoMdContacts className="nav-icon"/>
                 <br />
-                Contact
+                <span className="nav-text">Contact</span>
               </Link>
             </li>
 
@@ -73,9 +74,9 @@ export default function Navbar() {
                 className="btn-primary nav-link text-center"
                 onClick={() => document.getElementById('calendly-section').scrollIntoView({ behavior: 'smooth' })}
               >
-                <RiCalendarScheduleLine />
+                <RiCalendarScheduleLine className="nav-icon"/>
                 <br />
-                Schedule
+                <span className="nav-text">Schedule</span>
               </Link>
             </li>
           </ul>
