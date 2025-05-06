@@ -7,6 +7,7 @@ export default function Hero() {
     const navigate = useNavigate();
 
     return (
+        <main>
         <div
         className="container py-5" >
             <div className=
@@ -34,5 +35,6 @@ Here, we don’t just follow a recipe — we craft one that’s entirely yours, 
                 </div>
             </div>
         </div>
+        </main>
     )
 }

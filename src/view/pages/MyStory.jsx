@@ -3,6 +3,7 @@ import sarahprofile from '../../assests/sarahprofile.png';
 
 export default function MyStory() {
     return (
+        <main>
         <div className="container pb-5 mb-5">
             <div className="row align-items-center">
                 {/* Image Column */}
@@ -28,5 +29,6 @@ I’ll help you turn your ADHD chaos into a recipe for success. No shortcuts, ju
                 </div>
             </div>
         </div>
+        </main>
     );
 }

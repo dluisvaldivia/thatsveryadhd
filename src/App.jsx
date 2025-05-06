@@ -11,6 +11,8 @@ import NotFound from './view/pages/NotFound.jsx'
 import Schedule from './view/pages/Schedule.jsx'
 import BackToTop from './view/components/backToTop.jsx'
 import PrivacyPolicy from './view/pages/PrivacyPolicy.jsx'
+import TermsOfService from './view/pages/TermsOfService.jsx'
+import AccessibilityStatement from './view/pages/AccessibilityStatement.jsx'
 import {getInitialTheme, setTheme} from './controllers/themeController.js'
 
 
@@ -25,6 +27,8 @@ function App() {
         <Route path="/" element={<Landing />} />  
         <Route path="*" element={<NotFound />} />
         <Route path="/privacy-policy" element={<PrivacyPolicy/>} />
+        <Route path="/terms-of-service" element={<TermsOfService/>} />
+        <Route path="/accessibility-statement" element={<AccessibilityStatement/>} />
       </Routes>
       <Footer />
       <BackToTop />
