@@ -25,6 +25,7 @@ export default function Landing() {
                     <Contact />
                 </div>
                 
+                
             </div>
 
         </div>

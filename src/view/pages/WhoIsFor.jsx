@@ -7,7 +7,7 @@ export default function WhoIsFor() {
         <div className="container ">
             <div className="row">
                 <div className="col-10 mx-auto mb-5">
-                    <h1>Who is this for</h1>
+                    <h1>Who is this for?</h1>
                     <p>This space is for those who are ready to try something new, to break free from rigid molds and find what truly works for their brain. If you're:</p>
 
                     <ul>

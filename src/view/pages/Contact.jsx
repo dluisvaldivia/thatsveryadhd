@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import { LuSend } from "react-icons/lu";
+
 
 export default function Contact() {
     const [inputName, setInputName] = useState('')
@@ -68,7 +70,9 @@ export default function Contact() {
                         </div>
 
                         <div className="form-group d-flex justify-content-center">
-                            <button type="submit" className="btn-secondary mt-3">Submit</button>
+                            <button type="submit" className="btn-secondary mt-3">send <LuSend />
+
+                            </button>
                         </div>
                     </form>
                 </div>
